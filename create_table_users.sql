@@ -1,5 +1,5 @@
 CREATE TABLE users(
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     first_name VARCHAR(128) NOT NULL,
     last_name VARCHAR(128) NOT NULL
 );

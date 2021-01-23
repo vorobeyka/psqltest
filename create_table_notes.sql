@@ -1,8 +1,8 @@
 CREATE TABLE notes(
     id UUID PRIMARY KEY,
-    header VARCHAR(128), NOT NULL,
+    header VARCHAR(128) NOT NULL,
     body VARCHAR(1024) NOT NULL,
     is_deleted BOOLEAN NOT NULL,
-    user_id FOREIGN KEY (users) REFERENCES (id) NOT NULL,
+    user_id INTEGER REFERENCES users(id),
     modified_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
