@@ -1,1 +1,1 @@
-CREATE DATABASE basystyi_notes
+CREATE DATABASE basystyi_notes;
